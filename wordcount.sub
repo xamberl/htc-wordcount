@@ -1,0 +1,15 @@
+executable = wordcount.py
+arguments = Dracula.txt
+
+transfer_input_files = Dracula.txt
+
+log = job_$(Cluster).log
+output = job_$(Cluster).out
+error = job_$(Cluster).err
+
+request_cpus = 1
+request_disk = 1GB
+request_memory = 1GB
+
+queue 1
+
