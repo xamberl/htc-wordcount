@@ -21,7 +21,6 @@ Execution Points must have Python 3.
     ```
     [user@ap2002]$ ./wordcount.py Dracula.txt
     ```
-    It should create a `count.Dracula.txt` file. Delete this file after testing the Python script.
    
 1. View the contents of the submit file `wordcount.sub`. This file describes the computational work we want to  submit to HTCondor.
     ```
@@ -42,7 +41,11 @@ Execution Points must have Python 3.
     [user@ap2002]$ condor_watch_q
     ```
     
-1. When the job is complete, you should see a new `count.Dracula.txt` file in your directory using the `ls` command!
+1. When the job is complete, you should see new files in your directory using the `ls` command.
     ```
     [user@ap2002]$ ls
     ```
+    Print the output of the `job_*.out` file to see our expected output!
+   ```
+   [user@ap2002]$ cat job_*.out
+   ```
